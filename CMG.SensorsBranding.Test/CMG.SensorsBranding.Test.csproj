@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LogData\Log_calibrated_values.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="LogData\Log_calibrated_values.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CMG.SensorsBranding\CMG.SensorsBranding.csproj" />
+  </ItemGroup>
+
+</Project>
